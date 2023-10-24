@@ -36,6 +36,7 @@ function showSuggestions(results, inputVal) {
 function useSuggestion(e) {
 	const userSelection = e.target.innerText;
 	input.value = userSelection;
+	suggestions.innerHTML = "";
 }
 
 input.addEventListener('keyup', searchHandler);
